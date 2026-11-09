@@ -8,7 +8,23 @@ USE videoclub_berzal_perez;
 
 #Crear taules
 CREATE TABLE pelicula (
-	ID INT UNSIGNED NOT NULL,
-	region_name VARCHAR(25),
-	PRIMARY KEY (ID)
+	id INT UNSIGNED AUTO_INCREMENT,
+	titulo VARCHAR(25),
+    productora VARCHAR(25),
+    nacionalidad VARCHAR(25),
+    fecha DATE NOT NULL,
+    director VARCHAR(25),
+	PRIMARY KEY (ID),
+    CONSTRAINT director_id FOREIGN KEY (director) REFERENCES director(id)
+	);
+    
+CREATE TABLE director (
+	id INT UNSIGNED AUTO_INCREMENT,
+	titulo VARCHAR(25),
+    productora VARCHAR(25),
+    nacionalidad VARCHAR(25),
+    fecha DATE NOT NULL,
+    director VARCHAR(25),
+	PRIMARY KEY (ID),
+    CONSTRAINT director_id FOREIGN KEY (director) REFERENCES director(id)
 	);
