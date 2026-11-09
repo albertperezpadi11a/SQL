@@ -2,7 +2,7 @@
 DROP SCHEMA
 
 IF EXISTS videoclub_berzal_perez;
-	CREATE SCHEMA hr COLLATE = utf8_general_ci;
+	CREATE SCHEMA videoclub_berzal_perez COLLATE = utf8_general_ci;
 
 USE videoclub_berzal_perez;
 
