@@ -11,7 +11,7 @@ CREATE TABLE director (
 	id INT UNSIGNED AUTO_INCREMENT,
 	nombre VARCHAR(25) NOT NULL,
     nacionalidad VARCHAR(25),
-	PRIMARY KEY (id),
+	PRIMARY KEY (id)
 	);
     
 CREATE TABLE pelicula (
