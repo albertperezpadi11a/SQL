@@ -1,6 +1,6 @@
 USE videoclub_berzal_perez;
 
-INSERT INTO PELICULA (id, titulo, productora, nacionalidad, fecha, director) VALUES
+INSERT INTO pelicula (id, titulo, productora, nacionalidad, fecha, director) VALUES
 (1, 'Titanic', '20th Century Fox', 'Estats Units', '1997-12-19', 15),
 (2, 'Inception', 'Warner Bros', 'Estats Units', '2010-07-16', 5),
 (3, 'The Dark Knight', 'Warner Bros', 'Estats Units', '2008-07-18', 5),
@@ -12,7 +12,7 @@ INSERT INTO PELICULA (id, titulo, productora, nacionalidad, fecha, director) VAL
 (9, 'Joker', 'Warner Bros', 'Estats Units', '2019-10-04', 19),
 (10, 'The Wolf of Wall Street', 'Paramount Pictures', 'Estats Units', '2013-12-25', 13);
 
-INSERT INTO ACTOR VALUES
+INSERT INTO actor VALUES
 (1,'Leonardo DiCaprio', 'Estatunidenca', 'H'),
 (2,'Kate Winslet', 'Britànica', 'M'),
 (3,'Joseph Gordon-Levitt', 'Estatunidenca', 'H'),
@@ -29,7 +29,7 @@ INSERT INTO ACTOR VALUES
 (14,'Tom Hardy', 'Britànica', 'H'),
 (15,'Anne Hathaway', 'Estatunidenca', 'M');
 
-INSERT INTO ACTUA (id_peli, actor, personaje) VALUES
+INSERT INTO actua (id_peli, actor, personaje) VALUES
 (1, 1, 'Jack Dawson'),
 (1, 2, 'Rose DeWitt Bukater'),
 (2, 1, 'Dom Cobb'),
@@ -51,7 +51,7 @@ INSERT INTO ACTUA (id_peli, actor, personaje) VALUES
 (10, 12, 'Naomi Lapaglia'),
 (10, 13, 'Donnie Azoff');
 
-INSERT INTO DIRECTOR (id, nombre, nacionalidad) VALUES
+INSERT INTO director (id, nombre, nacionalidad) VALUES
 (1, 'Carla Simón', 'Espanya'),
 (2, 'Isabel Coixet', 'Espanya'),
 (3, 'Ventura Pons', 'Espanya'),
@@ -72,7 +72,7 @@ INSERT INTO DIRECTOR (id, nombre, nacionalidad) VALUES
 (18, 'Alejandro González Iñárritu', 'Mèxic'),
 (19, 'Todd Phillips', 'Estats Units');
 
-INSERT INTO ALQUILA (dni, id_peli, numero, fecha_alquiler, fecha_devolucion) VALUES
+INSERT INTO alquila (dni, id_peli, numero, fecha_alquiler, fecha_devolucion) VALUES
 ('11111111A', 1, 1, '2026-10-01', '2026-10-04'),
 ('22222222B', 2, 3, '2026-10-05', '2026-10-08'),
 ('11111111A', 3, 2, '2026-10-10', '2026-10-13'),
@@ -81,7 +81,7 @@ INSERT INTO ALQUILA (dni, id_peli, numero, fecha_alquiler, fecha_devolucion) VAL
 ('66666666F', 10, 7, '2026-11-12', NULL),
 ('77777777G', 9, 2, '2026-11-15', NULL);
 
-INSERT INTO EJEMPLAR (numero, estado) VALUES
+INSERT INTO ejemplar (numero, estado) VALUES
 (1 ,1, 'Disponible'),
 (2, 3, 'No Disponible'),
 (3, 2, 'Disponible'),
