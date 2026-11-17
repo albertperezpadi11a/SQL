@@ -4,14 +4,14 @@ CREATE SCHEMA videoclub_berzal_perez COLLATE = utf8_general_ci;
 USE videoclub_berzal_perez;
 
 #Crear taules
-CREATE TABLE director (
+CREATE TABLE DIRECTOR (
     id INT UNSIGNED AUTO_INCREMENT,
     nombre VARCHAR(25) NOT NULL,
     nacionalidad VARCHAR(25),
     PRIMARY KEY (id)
 );
     
-CREATE TABLE pelicula (
+CREATE TABLE PELICULA (
     id INT UNSIGNED AUTO_INCREMENT,
     titulo VARCHAR(25) NOT NULL,
     productora VARCHAR(25),
@@ -22,7 +22,7 @@ CREATE TABLE pelicula (
     CONSTRAINT fk_pelicula_director FOREIGN KEY (director) REFERENCES director(id)
 );
     
-CREATE TABLE actores (
+CREATE TABLE ACTORES (
     id INT UNSIGNED AUTO_INCREMENT,
     nombre VARCHAR(25) NOT NULL,
     nacionalidad VARCHAR(25),
@@ -31,7 +31,7 @@ CREATE TABLE actores (
     CONSTRAINT chk_sexo CHECK (sexo IN ("H","M"))
 );
 
-CREATE TABLE actua (
+CREATE TABLE ACTUA (
     id_actor INT UNSIGNED,
     id_peli INT UNSIGNED,
     personaje VARCHAR(25),
@@ -42,7 +42,7 @@ CREATE TABLE actua (
     CONSTRAINT chk_prota CHECK (prota IN ("sí","no"))
 );
     
-CREATE TABLE socio (
+CREATE TABLE SOCIO (
     dni CHAR(9) NOT NULL,
     nombre VARCHAR(25) NOT NULL,
     direccion VARCHAR(25),
@@ -52,7 +52,7 @@ CREATE TABLE socio (
     CONSTRAINT fk_socio_avalador FOREIGN KEY (avalador) REFERENCES socio(dni)
 );
     
-CREATE TABLE ejemplar (
+CREATE TABLE EJEMPLAR (
     id_peli INT UNSIGNED,
     numero INT,
     estado VARCHAR(25),
@@ -60,7 +60,7 @@ CREATE TABLE ejemplar (
     CONSTRAINT fk_ejemplar_pelicula FOREIGN KEY (id_peli) REFERENCES pelicula(id)
 );
     
-CREATE TABLE alquila (
+CREATE TABLE ALQUILA (
     dni CHAR(9) NOT NULL,
     id_peli INT UNSIGNED,
     numero INT,
