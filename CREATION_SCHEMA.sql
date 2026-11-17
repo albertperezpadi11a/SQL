@@ -6,7 +6,7 @@ USE videoclub_cognom1_cognom2;
 #Crear taules
 CREATE TABLE director (
     id INT UNSIGNED AUTO_INCREMENT,
-    nombre VARCHAR(25) NOT NULL,
+    nombre VARCHAR(35) NOT NULL,
     nacionalidad VARCHAR(25),
     PRIMARY KEY (id)
 );
