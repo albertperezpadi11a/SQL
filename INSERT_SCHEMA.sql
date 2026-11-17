@@ -1,16 +1,16 @@
 USE videoclub_berzal_perez;
 
-INSERT INTO PELICULA (id, titulo, productora, nacionalidad, fecha) VALUES
-(1, 'Titanic', '20th Century Fox', 'Estats Units', '1997-12-19'),
-(2, 'Inception', 'Warner Bros', 'Estats Units', '2010-07-16'),
-(3, 'The Dark Knight', 'Warner Bros', 'Estats Units', '2008-07-18'),
-(4, 'Forrest Gump', 'Paramount Pictures', 'Estats Units', '1994-07-06'),
-(5, 'Pulp Fiction', 'Miramax Films', 'Estats Units', '1994-10-14'),
-(6, 'Interstellar', 'Paramount Pictures', 'Estats Units', '2014-11-07'),
-(7, 'Gladiator', 'DreamWorks Pictures', 'Estats Units', '2000-05-05'),
-(8, 'The Revenant', '20th Century Fox', 'Estats Units', '2015-12-25'),
-(9, 'Joker', 'Warner Bros', 'Estats Units', '2019-10-04'),
-(10, 'The Wolf of Wall Street', 'Paramount Pictures', 'Estats Units', '2013-12-25');
+INSERT INTO PELICULA (id, titulo, productora, nacionalidad, fecha, director) VALUES
+(1, 'Titanic', '20th Century Fox', 'Estats Units', '1997-12-19', 15),
+(2, 'Inception', 'Warner Bros', 'Estats Units', '2010-07-16', 5),
+(3, 'The Dark Knight', 'Warner Bros', 'Estats Units', '2008-07-18', 5),
+(4, 'Forrest Gump', 'Paramount Pictures', 'Estats Units', '1994-07-06', 16),
+(5, 'Pulp Fiction', 'Miramax Films', 'Estats Units', '1994-10-14', 7),
+(6, 'Interstellar', 'Paramount Pictures', 'Estats Units', '2014-11-07', 5),
+(7, 'Gladiator', 'DreamWorks Pictures', 'Estats Units', '2000-05-05', 17),
+(8, 'The Revenant', '20th Century Fox', 'Estats Units', '2015-12-25', 18),
+(9, 'Joker', 'Warner Bros', 'Estats Units', '2019-10-04', 19),
+(10, 'The Wolf of Wall Street', 'Paramount Pictures', 'Estats Units', '2013-12-25', 13);
 
 INSERT INTO ACTOR VALUES
 (1,'Leonardo DiCaprio', 'Estatunidenca', 'H'),
@@ -65,4 +65,18 @@ INSERT INTO DIRECTOR (id, nombre, nacionalidad) VALUES
 (11, 'Céline Sciamma', 'França'),
 (12, 'Guillermo del Toro', 'Mèxic'),
 (13, 'Martin Scorsese', 'Estats Units'),
-(14, 'Federico Fellini', 'Itàlia');
+(14, 'Federico Fellini', 'Itàlia'),
+(15, 'James Cameron', 'Canadà'),
+(16, 'Robert Zemeckis', 'Estats Units'),
+(17, 'Ridley Scott', 'Regne Unit'),
+(18, 'Alejandro González Iñárritu', 'Mèxic'),
+(19, 'Todd Phillips', 'Estats Units');
+
+INSERT INTO ALQUILA (dni, id_peli, numero, fecha_alquiler, fecha_devolucion) VALUES
+('11111111A', 1, 1, '2026-10-01', '2026-10-04'),
+('22222222B', 2, 1, '2026-10-05', '2026-10-08'),
+('11111111A', 5, 1, '2026-10-10', '2026-10-13'),
+('33333333C', 3, 1, '2026-10-15', '2026-10-18'),
+('44444444D', 6, 1, '2026-11-01', '2026-11-05'),
+('66666666F', 9, 1, '2026-11-12', NULL),
+('77777777G', 10, 1, '2026-11-15', NULL);
