@@ -1,7 +1,7 @@
-DROP SCHEMA IF EXISTS videoclub_berzal_perez;
-CREATE SCHEMA videoclub_berzal_perez COLLATE = utf8_general_ci;
+DROP SCHEMA IF EXISTS videoclub_cognom1_cognom2;
+CREATE SCHEMA videoclub_cognom1_cognom2 COLLATE = utf8_general_ci;
 
-USE videoclub_berzal_perez;
+USE videoclub_cognom1_cognom2;
 
 #Crear taules
 CREATE TABLE director (

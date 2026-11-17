@@ -1,4 +1,4 @@
-USE videoclub_berzal_perez;
+USE videoclub_cognom1_cognom2;
 
 INSERT INTO pelicula (id, titulo, productora, nacionalidad, fecha, director) VALUES
 (1, 'Titanic', '20th Century Fox', 'Estats Units', '1997-12-19', 15),
