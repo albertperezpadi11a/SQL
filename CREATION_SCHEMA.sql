@@ -72,8 +72,6 @@ CREATE TABLE alquila (
     CONSTRAINT chk_fecha_alquiler CHECK (fecha_alquiler <= fecha_devolucion)
 );
 
-USE videoclub_cognom1_cognom2;
-
 INSERT INTO socio (dni, nombre, direccion, telefono, avalador) VALUES
 ('11111111A', 'Marc Puig i Ferrer', 'Carrer Major, 12', '600111111', NULL),
 ('22222222B', 'Laia Soler i Vila', 'Avinguda Diagonal, 45', '600222222', NULL),
